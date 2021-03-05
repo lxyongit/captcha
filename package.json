@@ -1,0 +1,17 @@
+{
+  "name": "orc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ffi-napi": "^4.0.1",
+    "ref-array-napi": "^1.2.1",
+    "ref-struct-napi": "^1.1.1"
+  }
+}

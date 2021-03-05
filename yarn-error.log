@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add ffi-api
+
+PATH: 
+  c:\program files\graphicsmagick-1.3.29-q8;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Users\lxyong\AppData\Roaming\npm;C:\Program Files (x86)\Common Files\Symbian\tools;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\lxyong\AppData\Roaming\nvm;C:\Program Files\Redis\;C:\Users\lxyong\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\lxyong\.windows-build-tools\python27;C:\Users\lxyong\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\lxyong\AppData\Local\Programs\Python\Python36\;C:\Users\lxyong\AppData\Local\Microsoft\WindowsApps;C:\Users\lxyong\AppData\Local\Yarn\bin;C:\Users\lxyong\AppData\Local\GitHubDesktop\bin;C:\Users\lxyong\AppData\Local\Programs\Fiddler;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.0.0
+
+Platform: 
+  win32 ia32
+
+Trace: 
+  Error: https://registry.npm.taobao.org/ffi-api: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1218:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "orc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "ffi-napi": "^4.0.1",
+      "ref-array-napi": "^1.2.1",
+      "ref-struct-napi": "^1.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
