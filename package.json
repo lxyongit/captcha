@@ -1,7 +1,7 @@
 {
-  "name": "orc",
-  "version": "1.0.0",
-  "description": "",
+  "name": "yzm-ocr",
+  "version": "1.0.1",
+  "description": "验证码识别",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js"

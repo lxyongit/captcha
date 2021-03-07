@@ -2,8 +2,7 @@ const ffi = require('ffi-napi')
 const path = require('path')
 const ref = require('ref-napi')
 const ArrayType = require('ref-array-napi')
-const { readFile, readFileSync } = require('fs')
-const { resolve } = require('path')
+const { readFile } = require('fs')
 const ocrDllPath = path.resolve(__dirname, 'ocr.dll')
 const byteArray = ArrayType(ref.types.byte)
 const ocrDll = ffi.Library(ocrDllPath, {
@@ -18,10 +17,7 @@ let isCalled = false
  * @return string 识别到的二维码
  * */ 
  function codeOcr(imgBuffer) {
-    if(!isCalled) {
-        ocrDll.init()
-        isCalled = true
-    }
+    codeOcr.init()
     return new Promise((resolve, reject) => {
         if(typeof imgBuffer === 'string') {
             readFile(imgBuffer, (err, data) => {
@@ -35,6 +31,13 @@ let isCalled = false
             resolve(ocrDll.ocr(imgBuffer, imgBuffer.length))
         }
     })
+}
+
+codeOcr.init = () => {
+    if(!isCalled) {
+        ocrDll.init()
+        isCalled = true
+    }
 }
 
 module.exports = codeOcr
